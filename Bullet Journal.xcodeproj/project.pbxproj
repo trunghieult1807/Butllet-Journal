@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1807B62A2414E72E004CAEE6 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807B6292414E72E004CAEE6 /* FirstVC.swift */; };
 		1807B62C2414E749004CAEE6 /* JournalsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807B62B2414E749004CAEE6 /* JournalsList.swift */; };
+		18593DD92418EBB2001579F7 /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18593DD62418EBB2001579F7 /* FourthVC.swift */; };
+		18593DDA2418EBB2001579F7 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18593DD72418EBB2001579F7 /* DateCollectionViewCell.swift */; };
+		18593DDB2418EBB2001579F7 /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18593DD82418EBB2001579F7 /* CalendarVars.swift */; };
+		18C62B4B2417D0B500CAC96D /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C62B4A2417D0B500CAC96D /* CameraHandler.swift */; };
 		18E8C7A32413866C0035F634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8C7A22413866C0035F634 /* AppDelegate.swift */; };
 		18E8C7A52413866C0035F634 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8C7A42413866C0035F634 /* SceneDelegate.swift */; };
 		18E8C7AA2413866C0035F634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8C7A82413866C0035F634 /* Main.storyboard */; };
@@ -39,6 +43,10 @@
 /* Begin PBXFileReference section */
 		1807B6292414E72E004CAEE6 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		1807B62B2414E749004CAEE6 /* JournalsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalsList.swift; sourceTree = "<group>"; };
+		18593DD62418EBB2001579F7 /* FourthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
+		18593DD72418EBB2001579F7 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		18593DD82418EBB2001579F7 /* CalendarVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
+		18C62B4A2417D0B500CAC96D /* CameraHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
 		18E8C79F2413866C0035F634 /* Bullet Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bullet Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E8C7A22413866C0035F634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E8C7A42413866C0035F634 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18593DD52418EB88001579F7 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				18593DD82418EBB2001579F7 /* CalendarVars.swift */,
+				18593DD72418EBB2001579F7 /* DateCollectionViewCell.swift */,
+				18593DD62418EBB2001579F7 /* FourthVC.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		18E8C7962413866C0035F634 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +126,8 @@
 				18E8C7AE2413866F0035F634 /* Assets.xcassets */,
 				1807B6292414E72E004CAEE6 /* FirstVC.swift */,
 				1807B62B2414E749004CAEE6 /* JournalsList.swift */,
+				18C62B4A2417D0B500CAC96D /* CameraHandler.swift */,
+				18593DD52418EB88001579F7 /* Calendar */,
 				18E8C7A82413866C0035F634 /* Main.storyboard */,
 				18E8C7B02413866F0035F634 /* LaunchScreen.storyboard */,
 				18E8C7B32413866F0035F634 /* Info.plist */,
@@ -268,7 +288,11 @@
 				1807B62C2414E749004CAEE6 /* JournalsList.swift in Sources */,
 				18E8C7AD2413866C0035F634 /* Bullet_Journal.xcdatamodeld in Sources */,
 				1807B62A2414E72E004CAEE6 /* FirstVC.swift in Sources */,
+				18C62B4B2417D0B500CAC96D /* CameraHandler.swift in Sources */,
+				18593DDA2418EBB2001579F7 /* DateCollectionViewCell.swift in Sources */,
 				18E8C7A32413866C0035F634 /* AppDelegate.swift in Sources */,
+				18593DDB2418EBB2001579F7 /* CalendarVars.swift in Sources */,
+				18593DD92418EBB2001579F7 /* FourthVC.swift in Sources */,
 				18E8C7A52413866C0035F634 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
