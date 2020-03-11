@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9It-5E-sJu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0vU-ao-Zwb">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -23,22 +23,6 @@
             </objects>
             <point key="canvasLocation" x="-839" y="-860"/>
         </scene>
-        <!--Item 1-->
-        <scene sceneID="Kg0-bw-0U1">
-            <objects>
-                <viewController id="326-yB-2uq" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7yg-vZ-xYl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="QWh-LQ-Ays"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Erv-Mi-mnm"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AKc-4t-EBu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-839" y="-1509"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="O0F-7u-bCl">
             <objects>
@@ -51,9 +35,9 @@
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="326-yB-2uq" kind="relationship" relationship="viewControllers" id="wzI-Zi-fGE"/>
                         <segue destination="YSr-df-82Z" kind="relationship" relationship="viewControllers" id="obS-So-Ogm"/>
                         <segue destination="sks-Bm-SRv" kind="relationship" relationship="viewControllers" id="tgd-Ut-1qd"/>
+                        <segue destination="9It-5E-sJu" kind="relationship" relationship="viewControllers" id="if2-hA-ZfY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAw-XL-g6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -487,7 +471,7 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FB-aQ-HVh">
-                                <rect key="frame" x="20" y="44" width="85" height="22"/>
+                                <rect key="frame" x="20" y="44" width="107" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title=" Journals" image="bac(22x22)">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1051,7 +1035,7 @@
             </objects>
             <point key="canvasLocation" x="1828" y="295"/>
         </scene>
-        <!--FourthVC-->
+        <!--Item-->
         <scene sceneID="p2n-HY-BXI">
             <objects>
                 <viewController id="9It-5E-sJu" customClass="FourthVC" customModule="Bullet_Journal" customModuleProvider="target" sceneMemberID="viewController">
@@ -1060,13 +1044,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vls-wB-8iJ">
-                                <rect key="frame" x="175" y="174" width="64" height="35"/>
+                                <rect key="frame" x="175.33333333333334" y="174" width="63.666666666666657" height="34.666666666666657"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVo-3O-KdF">
-                                <rect key="frame" x="333" y="180" width="22" height="22"/>
+                                <rect key="frame" x="333.33333333333331" y="180.33333333333334" width="22" height="22"/>
                                 <state key="normal" image="next(22x22)">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1075,7 +1059,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzB-fi-nVg">
-                                <rect key="frame" x="59" y="180" width="22" height="22"/>
+                                <rect key="frame" x="59" y="180.33333333333334" width="22" height="22"/>
                                 <state key="normal" image="bac(22x22)">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1134,7 +1118,7 @@
                                 </constraints>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6vf-fR-ksh">
-                                <rect key="frame" x="50" y="306" width="314" height="255"/>
+                                <rect key="frame" x="50" y="305.66666666666669" width="314" height="255.00000000000006"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="255" id="q8B-4d-iTI"/>
@@ -1199,6 +1183,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="R7y-by-hQo"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="FBe-GX-zfv"/>
                     <connections>
                         <outlet property="Calendar" destination="6vf-fR-ksh" id="Jyw-Yk-HhM"/>
                         <outlet property="MonthLabel" destination="Vls-wB-8iJ" id="BzY-bH-1rq"/>
@@ -1206,7 +1191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hzp-bv-Zao" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2098.5507246376815" y="-737.27678571428567"/>
+            <point key="canvasLocation" x="-839" y="-1538"/>
         </scene>
     </scenes>
     <resources>

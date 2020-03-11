@@ -80,6 +80,8 @@ class JournalList: UIViewController {
                 print("The animation is complete!")
             }
         }
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
         journalsButton.alpha = 0
     }
     
@@ -99,6 +101,8 @@ class JournalList: UIViewController {
                 print("The animation is complete!")
             }
         }
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
         journalsButton.alpha = 1
         
     }
