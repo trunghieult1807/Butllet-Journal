@@ -31,6 +31,8 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     
     var dayCounter = 0
     
+    var cellsArray: [UICollectionViewCell] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -101,7 +103,7 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
             
             currentMonth = Months[month]
             MonthLabel.text = "\(currentMonth) \(year)"
-            
+            MoveAnimationNext(Label: MonthLabel)
             Calendar.reloadData()
         default:
             Direction = 1
@@ -112,7 +114,7 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
 
             currentMonth = Months[month]
             MonthLabel.text = "\(currentMonth) \(year)"
-          
+            MoveAnimationNext(Label: MonthLabel)
             Calendar.reloadData()
         }
     }
@@ -139,6 +141,7 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
             
             currentMonth = Months[month]
             MonthLabel.text = "\(currentMonth) \(year)"
+            MoveAnimationBack(Label: MonthLabel)
             Calendar.reloadData()
             
         default:
@@ -150,6 +153,7 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
             
             currentMonth = Months[month]
             MonthLabel.text = "\(currentMonth) \(year)"
+            MoveAnimationBack(Label: MonthLabel)
             Calendar.reloadData()
         }
     }
@@ -175,7 +179,9 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Calendar", for: indexPath) as! DateCollectionViewCell
         cell.backgroundColor = UIColor.clear
         
-        cell.DateLabel.textColor = UIColor.black
+        cell.DateLabel.textColor = UIColor.white
+        
+        cell.DateLabel.textAlignment = .center
         
         cell.Circle.isHidden = true
         
@@ -211,7 +217,22 @@ class FourthVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
             cell.DrawCircle()
             
         }
+        cellsArray.append(cell)
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        cell.alpha = 0
+        cell.layer.transform = CATransform3DMakeScale(0.5, 0.5, 0.5)
+        
+        for x in cellsArray {
+            let cell: UICollectionViewCell = x
+            UIView.animate(withDuration: 2, delay: 0.01 * Double(indexPath.row), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
+                cell.alpha = 1
+                cell.layer.transform = CATransform3DMakeScale(1, 1, 1)
+            })
+        }
+    }
+    
 }
 

@@ -12,6 +12,7 @@
 		18593DD92418EBB2001579F7 /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18593DD62418EBB2001579F7 /* FourthVC.swift */; };
 		18593DDA2418EBB2001579F7 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18593DD72418EBB2001579F7 /* DateCollectionViewCell.swift */; };
 		18593DDB2418EBB2001579F7 /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18593DD82418EBB2001579F7 /* CalendarVars.swift */; };
+		18593DDD2418F043001579F7 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18593DDC2418F043001579F7 /* Animations.swift */; };
 		18C62B4B2417D0B500CAC96D /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C62B4A2417D0B500CAC96D /* CameraHandler.swift */; };
 		18E8C7A32413866C0035F634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8C7A22413866C0035F634 /* AppDelegate.swift */; };
 		18E8C7A52413866C0035F634 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8C7A42413866C0035F634 /* SceneDelegate.swift */; };
@@ -46,6 +47,7 @@
 		18593DD62418EBB2001579F7 /* FourthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
 		18593DD72418EBB2001579F7 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 		18593DD82418EBB2001579F7 /* CalendarVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
+		18593DDC2418F043001579F7 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		18C62B4A2417D0B500CAC96D /* CameraHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
 		18E8C79F2413866C0035F634 /* Bullet Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bullet Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E8C7A22413866C0035F634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				18593DD82418EBB2001579F7 /* CalendarVars.swift */,
+				18593DDC2418F043001579F7 /* Animations.swift */,
 				18593DD72418EBB2001579F7 /* DateCollectionViewCell.swift */,
 				18593DD62418EBB2001579F7 /* FourthVC.swift */,
 			);
@@ -291,6 +294,7 @@
 				18C62B4B2417D0B500CAC96D /* CameraHandler.swift in Sources */,
 				18593DDA2418EBB2001579F7 /* DateCollectionViewCell.swift in Sources */,
 				18E8C7A32413866C0035F634 /* AppDelegate.swift in Sources */,
+				18593DDD2418F043001579F7 /* Animations.swift in Sources */,
 				18593DDB2418EBB2001579F7 /* CalendarVars.swift in Sources */,
 				18593DD92418EBB2001579F7 /* FourthVC.swift in Sources */,
 				18E8C7A52413866C0035F634 /* SceneDelegate.swift in Sources */,
