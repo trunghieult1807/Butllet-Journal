@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0vU-ao-Zwb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cli-NR-Q3E">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -471,7 +471,7 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FB-aQ-HVh">
-                                <rect key="frame" x="20" y="44" width="107" height="44"/>
+                                <rect key="frame" x="20" y="44" width="85" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title=" Journals" image="bac(22x22)">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -986,6 +986,46 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="766.66666666666674" y="-414.17410714285711"/>
+        </scene>
+        <!--Image Picker-->
+        <scene sceneID="VwC-dL-z3R">
+            <objects>
+                <viewController id="Cli-NR-Q3E" customClass="ImagePicker" customModule="Bullet_Journal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JSC-hO-PF6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fvf-rL-g9J">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="2v1-tZ-kRJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVg-cC-bg0">
+                                <rect key="frame" x="157.66666666666666" y="816" width="98.999999999999972" height="30"/>
+                                <state key="normal" title="Choose Image"/>
+                                <connections>
+                                    <action selector="chooseImage:" destination="Cli-NR-Q3E" eventType="touchUpInside" id="rE5-hK-HaJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v0M-Eg-OwL" firstAttribute="trailing" secondItem="fvf-rL-g9J" secondAttribute="trailing" id="Qkk-6C-laq"/>
+                            <constraint firstItem="fvf-rL-g9J" firstAttribute="top" secondItem="v0M-Eg-OwL" secondAttribute="top" constant="-44" id="SpV-w8-gu9"/>
+                            <constraint firstItem="v0M-Eg-OwL" firstAttribute="bottom" secondItem="fVg-cC-bg0" secondAttribute="bottom" constant="16" id="Yrs-mk-Uo9"/>
+                            <constraint firstItem="fvf-rL-g9J" firstAttribute="leading" secondItem="v0M-Eg-OwL" secondAttribute="leading" id="fhQ-8D-yK8"/>
+                            <constraint firstItem="fVg-cC-bg0" firstAttribute="centerX" secondItem="JSC-hO-PF6" secondAttribute="centerX" id="tS9-TJ-V15"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v0M-Eg-OwL"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="fvf-rL-g9J" id="VhQ-66-RgL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3p-S7-ujs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-917" y="778"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="urD-3L-jhO">
