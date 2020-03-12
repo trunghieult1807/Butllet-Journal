@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		1807B62A2414E72E004CAEE6 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807B6292414E72E004CAEE6 /* FirstVC.swift */; };
 		1807B62C2414E749004CAEE6 /* JournalsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807B62B2414E749004CAEE6 /* JournalsList.swift */; };
+		184A7309241A45AF0080A97F /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A7302241A45AF0080A97F /* Meal.swift */; };
+		184A730A241A45AF0080A97F /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A7304241A45AF0080A97F /* MealTableViewCell.swift */; };
+		184A730B241A45AF0080A97F /* RatingControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A7305241A45AF0080A97F /* RatingControlller.swift */; };
+		184A730C241A45AF0080A97F /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A7307241A45AF0080A97F /* MealTableViewController.swift */; };
+		184A730D241A45AF0080A97F /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A7308241A45AF0080A97F /* MealViewController.swift */; };
 		18593DD92418EBB2001579F7 /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18593DD62418EBB2001579F7 /* FourthVC.swift */; };
 		18593DDA2418EBB2001579F7 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18593DD72418EBB2001579F7 /* DateCollectionViewCell.swift */; };
 		18593DDB2418EBB2001579F7 /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18593DD82418EBB2001579F7 /* CalendarVars.swift */; };
@@ -44,6 +49,11 @@
 /* Begin PBXFileReference section */
 		1807B6292414E72E004CAEE6 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		1807B62B2414E749004CAEE6 /* JournalsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalsList.swift; sourceTree = "<group>"; };
+		184A7302241A45AF0080A97F /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		184A7304241A45AF0080A97F /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		184A7305241A45AF0080A97F /* RatingControlller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControlller.swift; sourceTree = "<group>"; };
+		184A7307241A45AF0080A97F /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		184A7308241A45AF0080A97F /* MealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		18593DD62418EBB2001579F7 /* FourthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
 		18593DD72418EBB2001579F7 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 		18593DD82418EBB2001579F7 /* CalendarVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
@@ -90,6 +100,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184A7300241A45500080A97F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				184A7306241A45AF0080A97F /* Controller Meal */,
+				184A7301241A45AF0080A97F /* Model meal */,
+				184A7303241A45AF0080A97F /* View Meal */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		184A7301241A45AF0080A97F /* Model meal */ = {
+			isa = PBXGroup;
+			children = (
+				184A7302241A45AF0080A97F /* Meal.swift */,
+			);
+			path = "Model meal";
+			sourceTree = "<group>";
+		};
+		184A7303241A45AF0080A97F /* View Meal */ = {
+			isa = PBXGroup;
+			children = (
+				184A7304241A45AF0080A97F /* MealTableViewCell.swift */,
+				184A7305241A45AF0080A97F /* RatingControlller.swift */,
+			);
+			path = "View Meal";
+			sourceTree = "<group>";
+		};
+		184A7306241A45AF0080A97F /* Controller Meal */ = {
+			isa = PBXGroup;
+			children = (
+				184A7307241A45AF0080A97F /* MealTableViewController.swift */,
+				184A7308241A45AF0080A97F /* MealViewController.swift */,
+			);
+			path = "Controller Meal";
+			sourceTree = "<group>";
+		};
 		18593DD52418EB88001579F7 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +176,7 @@
 				1807B6292414E72E004CAEE6 /* FirstVC.swift */,
 				1807B62B2414E749004CAEE6 /* JournalsList.swift */,
 				18C62B4A2417D0B500CAC96D /* ImagePicker.swift */,
+				184A7300241A45500080A97F /* List */,
 				18593DD52418EB88001579F7 /* Calendar */,
 				18E8C7A82413866C0035F634 /* Main.storyboard */,
 				18E8C7B02413866F0035F634 /* LaunchScreen.storyboard */,
@@ -290,11 +337,16 @@
 			files = (
 				1807B62C2414E749004CAEE6 /* JournalsList.swift in Sources */,
 				18E8C7AD2413866C0035F634 /* Bullet_Journal.xcdatamodeld in Sources */,
+				184A730C241A45AF0080A97F /* MealTableViewController.swift in Sources */,
 				1807B62A2414E72E004CAEE6 /* FirstVC.swift in Sources */,
 				18C62B4B2417D0B500CAC96D /* ImagePicker.swift in Sources */,
+				184A730B241A45AF0080A97F /* RatingControlller.swift in Sources */,
+				184A7309241A45AF0080A97F /* Meal.swift in Sources */,
 				18593DDA2418EBB2001579F7 /* DateCollectionViewCell.swift in Sources */,
 				18E8C7A32413866C0035F634 /* AppDelegate.swift in Sources */,
 				18593DDD2418F043001579F7 /* Animations.swift in Sources */,
+				184A730A241A45AF0080A97F /* MealTableViewCell.swift in Sources */,
+				184A730D241A45AF0080A97F /* MealViewController.swift in Sources */,
 				18593DDB2418EBB2001579F7 /* CalendarVars.swift in Sources */,
 				18593DD92418EBB2001579F7 /* FourthVC.swift in Sources */,
 				18E8C7A52413866C0035F634 /* SceneDelegate.swift in Sources */,
