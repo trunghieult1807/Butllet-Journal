@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1807B62A2414E72E004CAEE6 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807B6292414E72E004CAEE6 /* FirstVC.swift */; };
 		1807B62C2414E749004CAEE6 /* JournalsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807B62B2414E749004CAEE6 /* JournalsList.swift */; };
+		1843632D241C90AA00130CF8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1843632C241C90AA00130CF8 /* MapKit.framework */; };
 		184A7309241A45AF0080A97F /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A7302241A45AF0080A97F /* Meal.swift */; };
 		184A730A241A45AF0080A97F /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A7304241A45AF0080A97F /* MealTableViewCell.swift */; };
 		184A730B241A45AF0080A97F /* RatingControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A7305241A45AF0080A97F /* RatingControlller.swift */; };
@@ -19,6 +20,10 @@
 		18593DDB2418EBB2001579F7 /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18593DD82418EBB2001579F7 /* CalendarVars.swift */; };
 		18593DDD2418F043001579F7 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18593DDC2418F043001579F7 /* Animations.swift */; };
 		18C62B4B2417D0B500CAC96D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C62B4A2417D0B500CAC96D /* ImagePicker.swift */; };
+		18E533FB241BBC1E00132929 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E533FA241BBC1E00132929 /* MapViewController.swift */; };
+		18E533FD241BCE1100132929 /* JournalTraker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E533FC241BCE1100132929 /* JournalTraker.swift */; };
+		18E5340A241BD0EE00132929 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E53409241BD0EE00132929 /* LocationService.swift */; };
+		18E5340B241BD3C200132929 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E53400241BD03D00132929 /* CoreLocation.framework */; };
 		18E8C7A32413866C0035F634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8C7A22413866C0035F634 /* AppDelegate.swift */; };
 		18E8C7A52413866C0035F634 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8C7A42413866C0035F634 /* SceneDelegate.swift */; };
 		18E8C7AA2413866C0035F634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8C7A82413866C0035F634 /* Main.storyboard */; };
@@ -49,6 +54,7 @@
 /* Begin PBXFileReference section */
 		1807B6292414E72E004CAEE6 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		1807B62B2414E749004CAEE6 /* JournalsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalsList.swift; sourceTree = "<group>"; };
+		1843632C241C90AA00130CF8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		184A7302241A45AF0080A97F /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		184A7304241A45AF0080A97F /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		184A7305241A45AF0080A97F /* RatingControlller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControlller.swift; sourceTree = "<group>"; };
@@ -59,6 +65,10 @@
 		18593DD82418EBB2001579F7 /* CalendarVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
 		18593DDC2418F043001579F7 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		18C62B4A2417D0B500CAC96D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		18E533FA241BBC1E00132929 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		18E533FC241BCE1100132929 /* JournalTraker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTraker.swift; sourceTree = "<group>"; };
+		18E53400241BD03D00132929 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		18E53409241BD0EE00132929 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		18E8C79F2413866C0035F634 /* Bullet Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bullet Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E8C7A22413866C0035F634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E8C7A42413866C0035F634 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1843632D241C90AA00130CF8 /* MapKit.framework in Frameworks */,
+				18E5340B241BD3C200132929 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,14 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		184A7300241A45500080A97F /* List */ = {
+		184A7300241A45500080A97F /* MemoryFeed */ = {
 			isa = PBXGroup;
 			children = (
 				184A7306241A45AF0080A97F /* Controller Meal */,
 				184A7301241A45AF0080A97F /* Model meal */,
 				184A7303241A45AF0080A97F /* View Meal */,
 			);
-			path = List;
+			path = MemoryFeed;
 			sourceTree = "<group>";
 		};
 		184A7301241A45AF0080A97F /* Model meal */ = {
@@ -147,6 +159,34 @@
 			path = Calendar;
 			sourceTree = "<group>";
 		};
+		18E533F9241BB8D200132929 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				1807B6292414E72E004CAEE6 /* FirstVC.swift */,
+				1807B62B2414E749004CAEE6 /* JournalsList.swift */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		18E533FE241BCE1500132929 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				18E533FC241BCE1100132929 /* JournalTraker.swift */,
+				18E53409241BD0EE00132929 /* LocationService.swift */,
+				18E533FA241BBC1E00132929 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		18E533FF241BD03D00132929 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1843632C241C90AA00130CF8 /* MapKit.framework */,
+				18E53400241BD03D00132929 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		18E8C7962413866C0035F634 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +194,7 @@
 				18E8C7BB2413866F0035F634 /* Bullet JournalTests */,
 				18E8C7C62413866F0035F634 /* Bullet JournalUITests */,
 				18E8C7A02413866C0035F634 /* Products */,
+				18E533FF241BD03D00132929 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,10 +214,10 @@
 				18E8C7A22413866C0035F634 /* AppDelegate.swift */,
 				18E8C7A42413866C0035F634 /* SceneDelegate.swift */,
 				18E8C7AE2413866F0035F634 /* Assets.xcassets */,
-				1807B6292414E72E004CAEE6 /* FirstVC.swift */,
-				1807B62B2414E749004CAEE6 /* JournalsList.swift */,
 				18C62B4A2417D0B500CAC96D /* ImagePicker.swift */,
-				184A7300241A45500080A97F /* List */,
+				18E533FE241BCE1500132929 /* Map */,
+				18E533F9241BB8D200132929 /* Media */,
+				184A7300241A45500080A97F /* MemoryFeed */,
 				18593DD52418EB88001579F7 /* Calendar */,
 				18E8C7A82413866C0035F634 /* Main.storyboard */,
 				18E8C7B02413866F0035F634 /* LaunchScreen.storyboard */,
@@ -339,6 +380,7 @@
 				18E8C7AD2413866C0035F634 /* Bullet_Journal.xcdatamodeld in Sources */,
 				184A730C241A45AF0080A97F /* MealTableViewController.swift in Sources */,
 				1807B62A2414E72E004CAEE6 /* FirstVC.swift in Sources */,
+				18E533FD241BCE1100132929 /* JournalTraker.swift in Sources */,
 				18C62B4B2417D0B500CAC96D /* ImagePicker.swift in Sources */,
 				184A730B241A45AF0080A97F /* RatingControlller.swift in Sources */,
 				184A7309241A45AF0080A97F /* Meal.swift in Sources */,
@@ -350,6 +392,8 @@
 				18593DDB2418EBB2001579F7 /* CalendarVars.swift in Sources */,
 				18593DD92418EBB2001579F7 /* FourthVC.swift in Sources */,
 				18E8C7A52413866C0035F634 /* SceneDelegate.swift in Sources */,
+				18E5340A241BD0EE00132929 /* LocationService.swift in Sources */,
+				18E533FB241BBC1E00132929 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
