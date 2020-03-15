@@ -11,7 +11,7 @@ import CoreData
 
 class FirstVC: UIViewController {
     var streakTrack: String = "0"
-    var twentyFour = Date().addingTimeInterval(-24*60*60)
+    //var twentyFour = Date().addingTimeInterval(-24*60*60)
     var thirtySix = Date().addingTimeInterval(-36*60*60)
     var then = Date()
     var nowStore = Date()
@@ -23,32 +23,34 @@ class FirstVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // MARK:
-        // Load data
-        retrieveDataStreak()
-        retrieveDataLastAccess()
-        // Debug
-        print("then: \(then)")
-        print("now: \(nowStore)")
-        print("twentyFour: \(twentyFour)")
-        print("thirtySix: \(thirtySix)")
-        // Implementation for streak
-        if then >= nowStore {
+        // MARK: Streak
+        do {
+            // Load data
+            retrieveDataStreak()
+            retrieveDataLastAccess()
+            // Debug
+            print("then: \(then)")
+            print("now: \(nowStore)")
+            //print("twentyFour: \(twentyFour)")
+            print("thirtySix: \(thirtySix)")
+            // Implementation for streak
+            if then >= nowStore {
+                createDataLastAccess(name: nowStore)
+            }
+            if isNewDay(_now: nowStore, _then: then) {
+                streakIncrease()
+                createDataLastAccess(name: nowStore)
+            }
+            else if then <= thirtySix {
+                streakTrack = "0"
+            }
+            // Díplay and save streak
+            streakLabel.text = streakTrack
+            createDataStreak(name: streakTrack)
             createDataLastAccess(name: nowStore)
+            // MARK: Date label
+            getMonthAndYear()
         }
-        if (then <= twentyFour && then >= thirtySix) || isNewDay(_now: nowStore, _then: then) {
-            streakIncrease()
-            createDataLastAccess(name: nowStore)
-        }
-        else if then <= thirtySix {
-            streakTrack = "0"
-        }
-        // Díplay and save streak
-        streakLabel.text = streakTrack
-        createDataStreak(name: streakTrack)
-        
-        // MARK: Date label
-        getMonthAndYear()
     }
     
     // MARK: Get time
@@ -151,6 +153,5 @@ class FirstVC: UIViewController {
     @IBAction func camera(_ gesture: UITapGestureRecognizer) {
         
     }
-    
     
 }

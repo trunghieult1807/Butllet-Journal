@@ -22,7 +22,7 @@ class JournalList: UIViewController {
     
     var isVisible: Bool = false
     var streakTrack: String = "0"
-    var twentyFour = Date().addingTimeInterval(-24*60*60)
+    // var twentyFour = Date().addingTimeInterval(-24*60*60)
     var thirtySix = Date().addingTimeInterval(-36*60*60)
     var then = Date()
     var nowStore = Date()
@@ -40,13 +40,13 @@ class JournalList: UIViewController {
             // Debug
             print("then: \(then)")
             print("now: \(nowStore)")
-            print("twentyFour: \(twentyFour)")
+            //print("twentyFour: \(twentyFour)")
             print("thirtySix: \(thirtySix)")
             // Implementation for streak
             if then >= nowStore {
                 createDataLastAccess(name: nowStore)
             }
-            if (then <= twentyFour && then >= thirtySix) || isNewDay(_now: nowStore, _then: then) {
+            if isNewDay(_now: nowStore, _then: then) {
                 streakIncrease()
                 createDataLastAccess(name: nowStore)
             }
@@ -56,6 +56,7 @@ class JournalList: UIViewController {
             // Díplay and save streak
             streakCountLabel.text = streakTrack
             createDataStreak(name: streakTrack)
+            createDataLastAccess(name: nowStore)
         }
     
         //MARK: 

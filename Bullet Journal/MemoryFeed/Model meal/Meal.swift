@@ -47,10 +47,12 @@ class Meal : NSObject ,NSCoding  {
             return nil
         }
         
-        let detail = aDecoder.decodeObject(forKey: PropertyKey.detail)
+        var detail = aDecoder.decodeObject(forKey: PropertyKey.detail)
         let photo = aDecoder.decodeObject(forKey: PropertyKey.photo) as? UIImage
         let rating = aDecoder.decodeInteger(forKey: PropertyKey.rating)
-        
+        if detail == nil {
+            detail = ""
+        }
         self.init(header: header, detail: detail as! String, photo: photo, rating: rating)
     }
     // Storing path
